@@ -35,4 +35,3 @@ result = translator.translate_text(text, source_lang=source_lang, target_lang=ta
 
 # copy clipbord
 pyperclip.copy(result.text)
-print(result)
