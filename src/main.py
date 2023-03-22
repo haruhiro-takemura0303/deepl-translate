@@ -27,6 +27,11 @@ target_lang = 'JA'
 # get english text
 text_raw = pyperclip.paste()
 
+# check empty paste
+if text_raw == '':
+    messagebox.showerror('Error', 'There is no text on clip bord')
+    sys.exit()
+
 # remove paragraph
 text = re.sub("\n", " ", text_raw)
 
